@@ -30,6 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
+    <groupId>com.adobe.cq.screens</groupId>
     <artifactId>screens-howto.ui.apps</artifactId>
     <name>screens-howto - UI apps</name>
     <description>UI apps package for screens-howto</description>
