@@ -30,6 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
+    <groupId>com.adobe.cq.screens</groupId>
     <artifactId>screens-howto.usecases.subsequences</artifactId>
     <name>screens-howto - Use Case: Local content using subsequences</name>
     <description>Local content example using subsequences for screens-howto</description>

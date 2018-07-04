@@ -30,6 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
+    <groupId>com.adobe.cq.screens</groupId>
     <artifactId>screens-howto.usecases.experiencefragments</artifactId>
     <name>screens-howto - Use Case: Experience Fragments</name>
     <description>Content reuse example using Experience Fragments</description>

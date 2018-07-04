@@ -30,6 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
+    <groupId>com.adobe.cq.screens</groupId>
     <artifactId>screens-howto.usecases.livecopies</artifactId>
     <name>screens-howto - Use Case: Local content using live copies</name>
     <description>Local content example using live copies for screens-howto</description>

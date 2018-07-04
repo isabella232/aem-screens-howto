@@ -30,6 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
+    <groupId>com.adobe.cq.screens</groupId>
     <artifactId>screens-howto.usecases.asciicodes</artifactId>
     <name>screens-howto - Use Case: ASCII Codes</name>
     <description>ASCII codes package for screens-howto</description>

@@ -30,6 +30,7 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
+    <groupId>com.adobe.cq.screens</groupId>
     <artifactId>screens-howto.usecases.statichtmlcontent.content</artifactId>
     <name>screens-howto - Use Case: Static Html Component Screens experience - Content Package"</name>
     <description>Static html Component usage</description>
