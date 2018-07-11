@@ -41,7 +41,7 @@
         <connection>scm:git:git@git.corp.adobe.com:Screens/screens-howto.git</connection>
         <developerConnection>scm:git:git@git.corp.adobe.com:Screens/screens-howto.git</developerConnection>
         <url>https://git.corp.adobe.com/Screens/screens-howto/tree/master/howto/ui.content</url>
-        <tag>development</tag>
+        <tag>screens-howto.ui.content-1.0.2</tag>
     </scm>
 
     <!-- ====================================================================== -->
