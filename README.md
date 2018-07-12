@@ -41,7 +41,7 @@ Name|Description
 Contributing
 ------------
 
-See our dedicated wiki page on [Contributing](wiki/Contributing) to the project.
+See our dedicated wiki page on [Contributing](../../wiki/Contributing) to the project.
 
 
 # Entry points

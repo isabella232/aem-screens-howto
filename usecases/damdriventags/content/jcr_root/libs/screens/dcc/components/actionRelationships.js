@@ -132,7 +132,7 @@ use(['helper.js'], function(helper) {
                     actionRels[helper.constants.screens.ACT_CREATE] = true;
                 }
             }
- 
+
             // Applications
             if (helper.isResourceType(page.getContentResource(), [helper.constants.screens.RT_APPLICATION])
                 && page.depth > 4) {

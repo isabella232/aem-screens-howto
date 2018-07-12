@@ -35,7 +35,7 @@
     <artifactId>screens-howto.usecases.damdriventags</artifactId>
     <name>Screens-Howto - Use Case: DAM driven Screens experience - Bundle</name>
     <packaging>bundle</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
 
     <!-- SVN Settings -->
     <scm>

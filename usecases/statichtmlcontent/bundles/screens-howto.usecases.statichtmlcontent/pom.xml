@@ -35,7 +35,7 @@
     <artifactId>screens-howto.usecases.statichtmlcontent</artifactId>
     <name>Screens-Howto - Use Case: Static Html Component Screens experience - Bundle</name>
     <packaging>bundle</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
 
     <!-- SVN Settings -->
     <scm>

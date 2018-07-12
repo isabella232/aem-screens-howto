@@ -1,0 +1,5 @@
+# Ignore vendor libraries
+**/vendor
+
+# Ignore packaged animation
+usecases/statichtmlcontent/**/Explosion.js

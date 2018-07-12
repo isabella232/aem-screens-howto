@@ -21,21 +21,20 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.day.cq</groupId>
+        <groupId>com.adobe.cq.screens</groupId>
         <artifactId>parent</artifactId>
-        <version>72</version>
+        <version>10</version>
         <relativePath />
     </parent>
 
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <groupId>com.adobe.cq.screens</groupId>
     <artifactId>screens-howto.usecases.asciicodes</artifactId>
     <name>screens-howto - Use Case: ASCII Codes</name>
     <description>ASCII codes package for screens-howto</description>
     <packaging>content-package</packaging>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
 
     <!-- SVN Settings -->
     <scm>
@@ -115,6 +114,14 @@
                 <groupId>org.apache.sling</groupId>
                 <artifactId>htl-maven-plugin</artifactId>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -125,14 +132,14 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.ui.apps</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.2</version>
             <type>zip</type>
         </dependency>
 
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.ui.content</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.2</version>
             <type>zip</type>
         </dependency>
     </dependencies>

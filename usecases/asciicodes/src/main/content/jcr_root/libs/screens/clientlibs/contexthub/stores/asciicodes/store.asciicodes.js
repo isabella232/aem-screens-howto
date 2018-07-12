@@ -36,7 +36,10 @@
      * @constructor
      */
     function AsciiCodeStore(name, config) {
-        this.config = Object.assign({}, config);
+        this.config = {};
+        Object.keys(config).forEach(function(k) {
+            this.config[k] = config[k];
+        }.bind(this));
         this.init(name, this.config);
 
         // Reset the ascci code in the store
@@ -48,11 +51,11 @@
         // Update the ascii store with each key press
         function keypressListener(ev) {
             if (FORM_ELEMENTS.indexOf(ev.target.nodeName) === -1 // Do not catch key press on form elements to not break user experience
-                    && ev.key.match(/[\x00-\x7F]/)) { // ignore non-ascii characters
+                    // ignore non-ascii characters
+                    && ev.key.match(/[\x00-\x7F]/)) { // eslint-disable-line no-control-regex
                 window.clearTimeout(charSequenceTimeout);
                 window.clearTimeout(resetTimeout);
 
-                var code = ContextHub.getItem(name + '/code') || '';
                 charSequence += ev.key;
                 ContextHub.setItem(name + '/code', charSequence);
                 charSequenceTimeout = window.setTimeout(function() { charSequence = ''; }, 1000);
