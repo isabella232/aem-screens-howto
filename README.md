@@ -41,7 +41,7 @@ Name|Description
 Contributing
 ------------
 
-See our dedicated wiki page on [Contributing](../../wiki/Contributing) to the project.
+See [Contributing.md] and also take a look at the [adding new use-cases](../../wiki/Adding-new-use-cases) wiki page for the project.
 
 
 # Entry points
