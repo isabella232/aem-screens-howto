@@ -14,7 +14,7 @@ All third-party contributions to this project must be accompanied by a signed co
 
 ## Code Reviews
 
-Start by reading our [Contributing page](../../wiki/Contributing) in the wiki.
+Start by reading our wiki page on [adding new use-cases](../../wiki/Adding-new-use-cases).
 
 All submissions should come in the form of pull requests and need to be reviewed by project committers. Read [GitHub's pull request documentation](https://help.github.com/articles/about-pull-requests/) for more information on sending pull requests.
 
