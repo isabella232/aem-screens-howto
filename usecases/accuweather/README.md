@@ -9,7 +9,7 @@ This how-to project walks you through how to achieve personalized content based 
 
 The project leverages AEM [personalization](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/personalization.html) which includes the [ContextHub](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/contexthub-config.html), the [Segmentation engine](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/segmentation.html) and the [Content Targeting UI](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/content-targeting-touch.html).
 
-Warning: the project contains a demo apikey to connect to Accuweather APIs. It must be replaced by your own key for non-demo usage of the code. You can edit the apikey in the [AccuWeather store config](http://localhost:4502/etc/cloudsettings/screens-howto/contexthub/accuweather.edit.html).
+**Warning**: the project requires an apikey to connect to Accuweather APIs. The placeholder must be replaced by your own key for demo usage of the code. You can edit the apikey in the [AccuWeather store config](http://localhost:4502/etc/cloudsettings/screens-howto/contexthub/accuweather.edit.html) or directly in the [.content.xml file](src/main/content/jcr_root/etc/cloudsettings/screens-howto/contexthub/accuweather/.content.xml#L9)
 
 ### Architecture Diagram
 
