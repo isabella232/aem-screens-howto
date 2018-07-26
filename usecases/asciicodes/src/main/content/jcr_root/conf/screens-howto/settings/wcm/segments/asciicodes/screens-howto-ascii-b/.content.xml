@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/conf/screens-howto/settings/cloudsettings/configuration/contexthub"
+        cq:contextHubSegmentsPath="/conf/screens-howto/settings/wcm/segments"
+        cq:designPath="/etc/designs/screens-howto"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="HowTo: ASCII Code B"
+        sling:resourceType="cq/contexthub/components/segment-page"
+        segmentBoost="{Long}0"
+        segmentName="HowTo: ASCII Code B">
+        <traits
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/contexthub/components/traits/logic/operator-and">
+            <andpar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <eq
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/contexthub/components/traits/generic-comparison/variants/property-value"
+                    dataType="string"
+                    operator="equals">
+                    <left
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/contexthub/components/traits/generic-comparison/type/property"
+                        property="asciicodes/code"/>
+                    <right
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/contexthub/components/traits/generic-comparison/type/value"
+                        value="b"/>
+                </eq>
+            </andpar>
+        </traits>
+    </jcr:content>
+</jcr:root>
