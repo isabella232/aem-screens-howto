@@ -250,13 +250,13 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.ui.apps</artifactId>
-            <version>1.0.3-SNAPSHOT</version>
+            <version>1.0.4</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.ui.content</artifactId>
-            <version>1.0.3-SNAPSHOT</version>
+            <version>1.0.4</version>
             <type>zip</type>
         </dependency>
         <dependency>
