@@ -34,6 +34,7 @@ Name|Description
 [languagecopies](usecases/languagecopies/)|Automatic channel content translation leveraging _AEM Sites Translation Cloud Services_
 [launches](usecases/launches/)|Scheduled content rollout leveraging _AEM Sites Launches_
 [livecopies](usecases/livecopies/)|Branch-specific content variations leveraging _AEM Sites Live Copies_
+[multizoneeditor](usecases/multizoneeditor/)|Multi-zone channel editor that allows custom layouts by leveraging _AEM Responsive Layout_
 [specialevents](usecases/specialevents/)|Branch-specific scheduled content overrides for special events using day-parting and channel priorities
 [statichtmlcontent](usecases/statichtmlcontent/)|Importing external HTML/JS/CSS experiences directly in your channel (for instance _Animate CC_ experiences)
 [subsequences](usecases/subsequences/)|Branch-specific content variations leveraging _Screens Embedded Sequences_

@@ -64,6 +64,7 @@
         <module>usecases/languagecopies</module>
         <module>usecases/launches</module>
         <module>usecases/livecopies</module>
+        <module>usecases/multizoneeditor</module>
         <module>usecases/specialevents</module>
         <module>usecases/statichtmlcontent</module>
         <module>usecases/subsequences</module>

@@ -1,7 +1,7 @@
 /*
  * ADOBE CONFIDENTIAL
  *
- * Copyright 2015 Adobe Systems Incorporated
+ * Copyright 2018 Adobe Systems Incorporated
  * All Rights Reserved.
  *
  * NOTICE:  All information contained herein is, and remains
@@ -15,13 +15,32 @@
  * from Adobe Systems Incorporated.
  */
 
-.cq-Screens-text,
-.parbase.text {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    padding: 2%;
-    font-size: 40pt;
-    box-sizing: border-box;
+.aem-AuthorLayer-Edit,
+.aem-AuthorLayer-Targeting,
+.aem-AuthorLayer-Layouting,
+.aem-AuthorLayer-Design,
+.aem-AuthorLayer-Scaffolding,
+.aem-AuthorLayer-Developer,
+.aem-AuthorLayer-Timewarp {
+
+  > body {
+    padding: 50px;
+  }
+
+  .aem-Layout {
     overflow: hidden;
+  }
+
+  .responsivegrid .aem-Grid {
+
+    .parbase + .new {
+      display: none;
+    }
+
+    .aem-Grid > .new {
+      margin: 3em 1em 1em 1em;
+    }
+
+  }
+
 }

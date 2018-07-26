@@ -1,7 +1,7 @@
 /*
  * ADOBE CONFIDENTIAL
  *
- * Copyright 2015 Adobe Systems Incorporated
+ * Copyright 2018 Adobe Systems Incorporated
  * All Rights Reserved.
  *
  * NOTICE:  All information contained herein is, and remains
@@ -14,14 +14,11 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Adobe Systems Incorporated.
  */
+(function(window) {
+    'use strict';
 
-.cq-Screens-text,
-.parbase.text {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    padding: 2%;
-    font-size: 40pt;
-    box-sizing: border-box;
-    overflow: hidden;
-}
+    window.Granite = window.Granite || {};
+    window.Granite.author = window.Granite.author || {};
+    window.Granite.author.screens = window.Granite.author.screens || {};
+
+}(window));

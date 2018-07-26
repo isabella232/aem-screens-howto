@@ -1,0 +1,98 @@
+/*
+ * ADOBE CONFIDENTIAL
+ *
+ * Copyright 2018 Adobe Systems Incorporated
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+@import (once) "/etc/clientlibs/wcm/foundation/grid/grid_base.less";
+
+/* maximum amount of grid cells to be provided */
+@max_col: 12;
+
+/* default breakpoint */
+.aem-Grid {
+  .generate-grid(default, @max_col);
+}
+
+/* phone breakpoint */
+@media (max-width: 768px) {
+  .aem-Grid {
+    .generate-grid(phone, @max_col);
+  }
+}
+
+/* tablet breakpoint */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .aem-Grid {
+    .generate-grid(tablet, @max_col);
+  }
+}
+
+.aem-Layout > .responsivegrid,
+.aem-Layout > .responsivegrid > .aem-Grid {
+  height: 100%;
+  overflow: hidden;
+}
+
+.aem-Layout > .responsivegrid img {
+  max-width: 100%;
+}
+
+/* Adding height classes for halves, thirds, quarters, fifths, sixths, eigths and tenths. */
+.aem-GridRow {
+    position: relative;
+    overflow: hidden;
+}
+.aem-GridRow--default--10 { height: 10%; }
+.aem-GridRow--default--12_5 { height: 12.5%; }
+.aem-GridRow--default--16 { height: 16.333%; }
+.aem-GridRow--default--20 { height: 20%; }
+.aem-GridRow--default--25 { height: 25%; }
+.aem-GridRow--default--30 { height: 30%; }
+.aem-GridRow--default--33 { height: 33.333%; }
+.aem-GridRow--default--37_5 { height: 37.5%; }
+.aem-GridRow--default--40 { height: 40%; }
+.aem-GridRow--default--50 { height: 50%; }
+.aem-GridRow--default--60 { height: 60%; }
+.aem-GridRow--default--62_5 { height: 62.5%; }
+.aem-GridRow--default--66 { height: 66.666%; }
+.aem-GridRow--default--70 { height: 70%; }
+.aem-GridRow--default--75 { height: 75%; }
+.aem-GridRow--default--80 { height: 80%; }
+.aem-GridRow--default--83 { height: 83.333%; }
+.aem-GridRow--default--87_5 { height: 87.5%; }
+.aem-GridRow--default--90 { height: 90%; }
+.aem-GridRow--default--100 { height: 100%; }
+
+/* Vertical offset classes. */
+.aem-GridRow--voffset--default--0 { top: 0; }
+.aem-GridRow--voffset--default--10 { top: -10%; }
+.aem-GridRow--voffset--default--12_5 { top: -12.5%; }
+.aem-GridRow--voffset--default--16 { top: -16.333%; }
+.aem-GridRow--voffset--default--20 { top: -20%; }
+.aem-GridRow--voffset--default--25 { top: -25%; }
+.aem-GridRow--voffset--default--30 { top: -30%; }
+.aem-GridRow--voffset--default--33 { top: -33.333%; }
+.aem-GridRow--voffset--default--37_5 { top: -37.5%; }
+.aem-GridRow--voffset--default--40 { top: -40%; }
+.aem-GridRow--voffset--default--50 { top: -50%; }
+.aem-GridRow--voffset--default--60 { top: -60%; }
+.aem-GridRow--voffset--default--62_5 { top: -62.5%; }
+.aem-GridRow--voffset--default--66 { top: -66.666%; }
+.aem-GridRow--voffset--default--70 { top: -70%; }
+.aem-GridRow--voffset--default--75 { top: -75%; }
+.aem-GridRow--voffset--default--80 { top: -80%; }
+.aem-GridRow--voffset--default--83 { top: -83.333%; }
+.aem-GridRow--voffset--default--87_5 { top: -87.5%; }
+.aem-GridRow--voffset--default--90 { top: -90%; }
+.aem-GridRow--voffset--default--100 { top: -100%; }

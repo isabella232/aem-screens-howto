@@ -159,6 +159,11 @@
                         </subPackage>
                         <subPackage>
                             <groupId>com.adobe.cq.screens</groupId>
+                            <artifactId>screens-howto.usecases.multizoneeditor</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+                        <subPackage>
+                            <groupId>com.adobe.cq.screens</groupId>
                             <artifactId>screens-howto.usecases.specialevents</artifactId>
                             <filter>true</filter>
                         </subPackage>
@@ -231,7 +236,7 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-core-pkg</artifactId>
-            <version>1.4.62</version>
+            <version>1.4.68</version>
             <type>zip</type>
         </dependency>
         <dependency>
@@ -245,13 +250,13 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.ui.apps</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.3-SNAPSHOT</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.ui.content</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.3-SNAPSHOT</version>
             <type>zip</type>
         </dependency>
         <dependency>
@@ -299,6 +304,12 @@
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.livecopies</artifactId>
             <version>1.0.2</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq.screens</groupId>
+            <artifactId>screens-howto.usecases.multizoneeditor</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
             <type>zip</type>
         </dependency>
         <dependency>
