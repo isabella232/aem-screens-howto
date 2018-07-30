@@ -9,7 +9,7 @@ The audience for this project is mainly product managers, solutions consultants 
 Getting started
 ---------------
 
-- Download the [last release](https://git.corp.adobe.com/Screens/screens-howto/releases)
+- Download the [last release](../../releases/latest)
 - Install the content package in AEM using the [Package Manager](http://localhost:4502/crx/packmgr/index.jsp) accessible through Tools &rarr; Deployment &rarr; Packages
 - Go through the [use cases](#use-cases)
 
