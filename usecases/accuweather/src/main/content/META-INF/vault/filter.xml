@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/content/campaigns/screens-howto/master/weather-based-campaign" mode="update"/>
-    <filter root="/content/screens/screens-howto/channels/data-trigger-accuweather" mode="update"/>
-    <filter root="/conf/screens-howto" mode="update"/>
+    <filter root="/content/campaigns/screens-howto/master/weather-based-campaign"/>
+    <filter root="/content/screens/screens-howto/channels/data-trigger-accuweather"/>
+    <filter root="/conf/screens-howto/settings/cloudsettings/configuration/contexthub" mode="update"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/accuweather"/>
 </workspaceFilter>
