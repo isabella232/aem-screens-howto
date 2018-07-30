@@ -8,7 +8,7 @@
     disabled="{Boolean}false">
     <segmentation
         jcr:primaryType="nt:unstructured"
-        jcr:title="Segmentation Store"
+        jcr:title="Segmentation"
         sling:resourceType="/libs/granite/contexthub/cloudsettings/components/basestore"
         enabled="{Boolean}true"
         required="{Boolean}true"
