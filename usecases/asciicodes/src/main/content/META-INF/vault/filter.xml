@@ -4,5 +4,5 @@
     <filter root="/content/screens/screens-howto/channels/data-trigger-asciicodes"/>
     <filter root="/libs/screens/clientlibs/contexthub/stores/asciicodes"/>
     <filter root="/conf/screens-howto/settings/cloudsettings/configuration/contexthub" mode="update"/>
-    <filter root="/conf/screens-howto/settings/wcm/segments/asciicodes"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments" mode="update"/>
 </workspaceFilter>

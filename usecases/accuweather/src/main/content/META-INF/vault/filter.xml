@@ -3,5 +3,5 @@
     <filter root="/content/campaigns/screens-howto/master/weather-based-campaign"/>
     <filter root="/content/screens/screens-howto/channels/data-trigger-accuweather"/>
     <filter root="/conf/screens-howto/settings/cloudsettings/configuration/contexthub" mode="update"/>
-    <filter root="/conf/screens-howto/settings/wcm/segments/accuweather"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments" mode="update"/>
 </workspaceFilter>
