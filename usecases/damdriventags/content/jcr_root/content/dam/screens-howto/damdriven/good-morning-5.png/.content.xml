@@ -4,8 +4,6 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="7e2ac0b1-40ae-48c4-a0d1-a55e4c6b0877">
     <jcr:content
-        jcr:lastModified="{Date}2018-03-05T22:15:01.853+01:00"
-        jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             cq:tags="[screens-howto:dam-driven-content/goodmorning]"
@@ -24,8 +22,6 @@
             dam:size="{Long}33170"
             dc:format="image/png"
             dc:modified="{Date}2018-03-05T22:15:01.754+01:00"
-            jcr:lastModified="{Date}2018-03-05T22:15:01.754+01:00"
-            jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
             tiff:ImageLength="{Long}1080"

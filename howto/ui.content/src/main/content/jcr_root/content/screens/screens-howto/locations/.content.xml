@@ -2,18 +2,10 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2018-01-01T00:00:00.000+00:00"
-        cq:lastModifiedBy="admin"
         cq:template="/libs/screens/core/templates/locationfolder"
         jcr:primaryType="cq:PageContent"
         jcr:title="Locations"
         sling:resourceType="screens/core/components/locationfolder">
         <image jcr:primaryType="nt:unstructured"/>
     </jcr:content>
-    <dam-driven-location/>
-    <experience-fragments/>
-    <local-content-live-copy/>
-    <local-content-subsequence/>
-    <special-event-channel-priority/>
-    <import-static-html-content/>
 </jcr:root>

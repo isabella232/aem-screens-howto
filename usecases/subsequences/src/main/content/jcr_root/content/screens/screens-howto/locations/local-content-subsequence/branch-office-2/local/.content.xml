@@ -6,8 +6,6 @@
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
         cq:cssClass="aem-Layout aem-Layout--1x1"
         cq:designPath="/etc/designs/screens-howto"
-        cq:lastModified="{Date}2018-01-01T00:00:00.000+00:00"
-        cq:lastModifiedBy="admin"
         cq:template="/libs/screens/core/templates/sequencechannel"
         jcr:primaryType="cq:PageContent"
         jcr:title="Local Channel"
@@ -25,6 +23,5 @@
                 text="&lt;h1>Local Content — Branch Office 2&lt;/h1>&#xa;&lt;p>This content is only shown for the&amp;nbsp;&lt;i>Branch Office 2&lt;/i>&lt;/p>&#xa;"
                 textIsRich="true"/>
         </par>
-        <offline-config/>
     </jcr:content>
 </jcr:root>

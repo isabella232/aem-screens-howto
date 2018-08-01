@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/content/campaigns/screens-howto/master/asciicodes-based-campaign"/>
+    <filter root="/content/campaigns/screens-howto" mode="update"/>
     <filter root="/content/screens/screens-howto/channels/data-trigger-asciicodes"/>
     <filter root="/libs/screens/clientlibs/contexthub/stores/asciicodes"/>
     <filter root="/conf/screens-howto/settings/cloudsettings/configuration/contexthub" mode="update"/>
     <filter root="/conf/screens-howto/settings/wcm/segments" mode="update"/>
+    <filter root="/etc/cloudsettings/screens-howto/contexthub" mode="update" />
+    <filter root="/etc/segmentation/contexthub/screens-howto" mode="update" />
 </workspaceFilter>

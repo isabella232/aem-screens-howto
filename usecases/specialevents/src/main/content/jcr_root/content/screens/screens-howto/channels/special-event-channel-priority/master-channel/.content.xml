@@ -6,8 +6,6 @@
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
         cq:cssClass="aem-Layout aem-Layout--1x1"
         cq:designPath="/etc/designs/screens-howto"
-        cq:lastModified="{Date}2018-01-01T00:00:00.000+00:00"
-        cq:lastModifiedBy="admin"
         cq:template="/libs/screens/core/templates/sequencechannel"
         jcr:primaryType="cq:PageContent"
         jcr:title="Master Channel"
@@ -35,6 +33,5 @@
                 text="&lt;h1>Special Event — Master Channel&lt;/h1>&#xa;&lt;p>This is the &lt;code>3rd&lt;/code> item in the &lt;i>Master Channel&lt;/i>&lt;/p>&#xa;"
                 textIsRich="true"/>
         </par>
-        <offline-config/>
     </jcr:content>
 </jcr:root>

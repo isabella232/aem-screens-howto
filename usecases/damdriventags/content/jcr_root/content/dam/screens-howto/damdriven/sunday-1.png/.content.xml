@@ -4,8 +4,6 @@
     jcr:primaryType="dam:Asset"
     jcr:uuid="b784e57e-fa65-4f14-a0e5-456d651dd60d">
     <jcr:content
-        jcr:lastModified="{Date}2018-03-05T22:14:05.929+01:00"
-        jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             cq:tags="[screens-howto:dam-driven-content/sunday]"
@@ -24,8 +22,6 @@
             dam:size="{Long}24950"
             dc:format="image/png"
             dc:modified="{Date}2018-03-05T22:14:05.680+01:00"
-            jcr:lastModified="{Date}2018-03-05T22:14:05.679+01:00"
-            jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
             tiff:ImageLength="{Long}1080"

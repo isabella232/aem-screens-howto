@@ -3,16 +3,9 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:cloudserviceconfigs="[[]]"
-        cq:lastModified="{Date}2018-01-01T00:00:00.000+00:00"
-        cq:lastModifiedBy="admin"
         cq:template="/libs/screens/core/templates/project"
         jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="Screens HowTo"
         sling:resourceType="screens/core/components/project"/>
-    <apps/>
-    <channels/>
-    <devices/>
-    <locations/>
-    <schedules/>
 </jcr:root>

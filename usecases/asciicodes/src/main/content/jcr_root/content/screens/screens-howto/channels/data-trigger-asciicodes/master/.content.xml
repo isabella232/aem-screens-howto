@@ -2,10 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:contextHubPath="/conf/screens-howto/settings/cloudsettings/configuration/contexthub"
-        cq:contextHubSegmentsPath="/conf/screens-howto/settings/wcm/segments"
+        cq:contextHubPath="/etc/cloudsettings/screens-howto/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub/screens-howto"
         cq:cssClass="aem-Layout aem-Layout--1x1"
         cq:designPath="/etc/designs/screens-howto"
+        cq:target-ambits="[/content/campaigns/screens-howto/master]"
         cq:template="/libs/screens/core/templates/sequencechannel"
         jcr:primaryType="cq:PageContent"
         jcr:title="Simple content example"
