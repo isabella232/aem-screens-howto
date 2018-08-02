@@ -1,5 +1,7 @@
-body {
-    font-family: Adobe Clean, Helvetica Neue, Verdana, Arial;
+body.aem-Layout {
+    font: normal 16px/1.1em Adobe Clean, Helvetica Neue, Verdana, Arial;
+    margin: 0;
+    padding: 0;
 }
 
 body:before {
@@ -26,6 +28,7 @@ h1 {
     background: #eee;
     margin: -2% -2% 0 -2%;
     padding: 2%;
+    line-height: 1em;
 }
 
 .aem-AuthorLayer-Design h1,
