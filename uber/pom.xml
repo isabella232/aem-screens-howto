@@ -241,7 +241,7 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-core-pkg</artifactId>
-            <version>1.4.68</version>
+            <version>1.4.78</version>
             <type>zip</type>
         </dependency>
         <dependency>
