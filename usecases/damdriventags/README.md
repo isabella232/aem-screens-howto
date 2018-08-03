@@ -1,14 +1,14 @@
-DAM driven Screens experience
-========================
+DAM driven tags Screens experience
+==================================
 
 Use Case
 --------
-As a customer you can be overwhelmed by the power of DCC, especially if you're already an expert in DAM features. 
-This module contains a sample on how to edit and maintain the content of a Channel via DAM instead of DCC. 
+As a customer you can be overwhelmed by the power of DCC, especially if you're already an expert in DAM features.
+This module contains a sample on how to edit and maintain the content of a Channel via DAM instead of DCC.
 The purpose is to strictly disallow editing via DCC and instead leverage the full potential of DAM, including:
 * tagging
 
-More info: 
+More info:
 * research story: [[research] Create a DAM driven Tagging-Channel in HowTo](https://jira.corp.adobe.com/browse/CQ-4237003)
 * implementation story: [[screens-howto] Create DAM driven tagging channel](https://jira.corp.adobe.com/browse/CQ-4237003).
 
@@ -61,6 +61,6 @@ Due to this limitation, the tag field on channels is disabled in edit mode for A
 * Problem: Workflow is triggered for all assets in DAM for every tag change.
     * Possible workaround: Change the "globbing path" for the workflow launcher to point to a specific asset-folder.
 
-* Problem: Launchers and workflows are async. That means we cannot show a loading indicator in DAM. 
+* Problem: Launchers and workflows are async. That means we cannot show a loading indicator in DAM.
 The user will always assume that the task of syncing and maybe even creating the offline config automatically will be done.
     * Possible workaround for offline config: Add a check in the Publish Button before publishing to check if workflow is finished (Author/Publish setup only).

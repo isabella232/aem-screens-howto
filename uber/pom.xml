@@ -134,6 +134,11 @@
                         </subPackage>
                         <subPackage>
                             <groupId>com.adobe.cq.screens</groupId>
+                            <artifactId>screens-howto.usecases.damdrivenfolder</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+                        <subPackage>
+                            <groupId>com.adobe.cq.screens</groupId>
                             <artifactId>screens-howto.usecases.damdriventags.content</artifactId>
                             <filter>true</filter>
                         </subPackage>
@@ -269,6 +274,12 @@
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.asciicodes</artifactId>
             <version>1.0.2</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq.screens</groupId>
+            <artifactId>screens-howto.usecases.damdrivenfolder</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
             <type>zip</type>
         </dependency>
         <dependency>

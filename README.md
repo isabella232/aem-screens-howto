@@ -29,7 +29,8 @@ Name|Description
 -|-
 [accuweather](usecases/accuweather/)|Dynamic content based on live weather information
 [asciicodes](usecases/asciicodes/)|Dynamic content based on keyboard input
-[damdriventags](usecases/damdriventags/)|Authoring the content of the Screens channels directly from _AEM Assets_ tags
+[damdrivenfolder](usecases/damdrivenfolder/)|Authoring the content of the Screens channels directly from _AEM Assets_ folder using a non-editable sequence
+[damdriventags](usecases/damdriventags/)|Authoring the content of the Screens channels directly from _AEM Assets_ tags. A different take on the DAM-driver approach with a non-editable channel instead of a non-editable sequence
 [experiencefragments](usecases/experiencefragments/)|Reuse _Experience Fragments_ coming from AEM Sites directly in the Screens channels
 [languagecopies](usecases/languagecopies/)|Automatic channel content translation leveraging _AEM Sites Translation Cloud Services_
 [launches](usecases/launches/)|Scheduled content rollout leveraging _AEM Sites Launches_

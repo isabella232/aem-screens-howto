@@ -12,6 +12,7 @@
         <par jcr:primaryType="nt:unstructured"/>
     </jcr:content>
     <content-update-launches/>
+    <dam-driven-folder/>
     <dam-driven-content/>
     <data-trigger-accuweather/>
     <data-trigger-asciicodes/>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/screens-howto/components/screens/assetsfoldersequence"/>
+    <filter root="/apps/screens-howto/templates/assetsfolderchannel"/>
+    <filter root="/content/screens/screens-howto/channels/dam-driven-folder"/>
+</workspaceFilter>
