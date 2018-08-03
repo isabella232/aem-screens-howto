@@ -146,7 +146,7 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>com.adobe.cq.screens</artifactId>
-            <version>1.4.65-SNAPSHOT</version>
+            <version>1.4.74</version>
         </dependency>
     </dependencies>
 </project>
