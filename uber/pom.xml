@@ -236,7 +236,7 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>com.adobe.cq.screens</artifactId>
-            <version>1.4.58</version>
+            <version>1.4.74</version>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
@@ -279,7 +279,7 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.damdrivenfolder</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0</version>
             <type>zip</type>
         </dependency>
         <dependency>
