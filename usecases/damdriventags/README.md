@@ -19,7 +19,7 @@ How to Use the Sample Content
 -----------------------------
 
 * Add more [AEM Tags](http://localhost:4502/aem/tags) (Path: /etc/tags/screens-howto/damdriven-content)
-* Tag more assets via [AEM Assets](http://localhost:4502/assets.html/content/dam) (Path: /content/dam/screens-howto/damdriven) 
+* Tag more assets via [AEM Assets](http://localhost:4502/assets.html/content/dam) (Path: /content/dam/screens-howto/damdriven)
 * Add more tagged channels via [AEM screens-howto -> channels -> dam-driven-content](http://localhost:4502/screens.html/content/screens/screens-howto/channels/dam-driven-content) (Path: /content/screens/channels/dam-driven-content)
 
 ---
@@ -66,3 +66,6 @@ Sample Content Links
     + [Main Channels](http://localhost:4502/screens.html/content/screens/screens-howto/channels/dam-driven-content)
     + [Assets Folder](http://localhost:4502/assets.html/content/dam/screens-howto/damdriven)
 
+* Problem: Launchers and workflows are async. That means we cannot show a loading indicator in DAM.
+The user will always assume that the task of syncing and maybe even creating the offline config automatically will be done.
+    * Possible workaround for offline config: Add a check in the Publish Button before publishing to check if workflow is finished (Author/Publish setup only).
