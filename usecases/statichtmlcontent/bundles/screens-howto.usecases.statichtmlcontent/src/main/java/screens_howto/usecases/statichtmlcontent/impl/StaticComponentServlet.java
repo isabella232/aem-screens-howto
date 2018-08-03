@@ -17,14 +17,14 @@
  ************************************************************************/
 package screens_howto.usecases.statichtmlcontent.impl;
 
-import static javax.servlet.http.HttpServletResponse.SC_BAD_REQUEST;
-import static javax.servlet.http.HttpServletResponse.SC_NOT_FOUND;
-import static org.apache.jackrabbit.JcrConstants.NT_FOLDER;
-import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVLET_EXTENSIONS;
-import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVLET_METHODS;
-import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVLET_RESOURCE_TYPES;
-import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVLET_SELECTORS;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
+import javax.annotation.Nonnull;
+import javax.jcr.RepositoryException;
+import javax.servlet.Servlet;
+import javax.servlet.ServletException;
 
 import org.apache.jackrabbit.JcrConstants;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -41,18 +41,19 @@ import org.osgi.service.component.annotations.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.day.cq.commons.Externalizer;
+
 import screens_howto.usecases.statichtmlcontent.util.ContentToPersistantHandler;
 import screens_howto.usecases.statichtmlcontent.util.MainHtmlPageHandler;
 import screens_howto.usecases.statichtmlcontent.util.StaticContentZipUtils;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.annotation.Nonnull;
-import javax.jcr.RepositoryException;
-import javax.servlet.Servlet;
-import javax.servlet.ServletException;
+import static javax.servlet.http.HttpServletResponse.SC_BAD_REQUEST;
+import static javax.servlet.http.HttpServletResponse.SC_NOT_FOUND;
+import static org.apache.jackrabbit.JcrConstants.NT_FOLDER;
+import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVLET_EXTENSIONS;
+import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVLET_METHODS;
+import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVLET_RESOURCE_TYPES;
+import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVLET_SELECTORS;
 
 @Component(
     service = { Servlet.class },
@@ -92,7 +93,7 @@ public class StaticComponentServlet extends SlingAllMethodsServlet {
         //first add href base tag, then save as resource
         mainHtmlPageHandler.setNext(contentToPersistantHandler);
     }
-  
+
     @Override
     protected void doPost(@Nonnull SlingHttpServletRequest request, @Nonnull SlingHttpServletResponse response) throws IOException {
 
@@ -121,7 +122,16 @@ public class StaticComponentServlet extends SlingAllMethodsServlet {
             Resource contentRes = getContentResource(staticComponent, resourceResolver);
             contentToPersistantHandler.setResourceResolver(resourceResolver);
             contentToPersistantHandler.setDestination(contentRes);
-            mainHtmlPageHandler.setRootPath(contentRes.getPath() + "/");
+
+            Externalizer externalizer = resourceResolver.adaptTo(Externalizer.class);
+            String rootPath = "";
+            if (externalizer != null) {
+                rootPath = externalizer.externalLink(resourceResolver, Externalizer.LOCAL, contentRes.getPath());
+            }
+            else {
+                rootPath = contentRes.getPath();
+            }
+            mainHtmlPageHandler.setRootPath(rootPath + "/");
 
             if (!zipUtils.isZip(archiveRes)) {
                 response.setStatus(SC_BAD_REQUEST);

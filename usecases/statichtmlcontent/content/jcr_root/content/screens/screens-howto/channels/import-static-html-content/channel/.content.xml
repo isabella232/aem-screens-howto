@@ -3,14 +3,15 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:cssClass="aem-Layout aem-Layout--1x1"
-        cq:designPath="/libs/settings/wcm/designs/screens"
+        cq:designPath="/etc/designs/screens-howto"
         cq:lastModified="{Date}2018-01-01T00:00:00.000+00:00"
         cq:lastModifiedBy="admin"
         cq:template="/libs/screens/core/templates/sequencechannel"
         jcr:primaryType="cq:PageContent"
         jcr:title="Static HTML Content Channel"
         sling:resourceSuperType="screens/core/components/channel"
-        sling:resourceType="screens/core/components/sequencechannel">
+        sling:resourceType="screens/core/components/sequencechannel"
+        forceRemoteContent="true">
         <par
             cq:cssClass="aem-LayoutCell--1-1"
             jcr:primaryType="nt:unstructured"

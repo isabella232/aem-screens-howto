@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:cssClass="aem-Layout aem-Layout--1x1"
-        cq:designPath="/libs/settings/wcm/designs/screens"
+        cq:designPath="/etc/designs/screens-howto"
         cq:tags="[screens-howto:dam-driven-content/goodmorning]"
         cq:template="/apps/screens-howto/templates/tagchannel"
         jcr:primaryType="cq:PageContent"

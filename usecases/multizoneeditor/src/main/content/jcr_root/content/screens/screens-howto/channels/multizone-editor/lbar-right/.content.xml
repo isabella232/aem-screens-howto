@@ -11,7 +11,8 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="Right L-Bar with 4 zones"
         sling:resourceSuperType="screens/core/components/channel"
-        sling:resourceType="screens/core/components/multiscreenchannel">
+        sling:resourceType="screens/core/components/multiscreenchannel"
+        forceRemoteContent="true">
         <grid
             jcr:primaryType="nt:unstructured"
             sling:resourceType="screens-howto/components/screens/content/responsivegrid">

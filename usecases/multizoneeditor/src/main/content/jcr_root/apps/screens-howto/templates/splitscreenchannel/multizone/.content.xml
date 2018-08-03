@@ -12,7 +12,8 @@
         cq:deviceGroups="[mobile/groups/responsive]"
         jcr:primaryType="cq:PageContent"
         sling:resourceSuperType="screens/core/components/channel"
-        sling:resourceType="screens/core/components/multiscreenchannel">
+        sling:resourceType="screens/core/components/multiscreenchannel"
+        forceRemoteContent="true">
         <grid
             jcr:primaryType="nt:unstructured"
             sling:resourceType="screens-howto/components/screens/content/responsivegrid"/>

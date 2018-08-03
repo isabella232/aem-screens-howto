@@ -39,6 +39,8 @@ AEM version|Compatibility     |Comments
 6.3        |:white_check_mark:|
 6.4        |:heavy_exclamation_mark:|While weather based content should be working, some bugs have been raised regarding segments authoring and ContextHub administration.
 
+:warning: The channels in this project do not work in offline mode at the moment.
+
 ### Features built upon
 
 The solution uses:
