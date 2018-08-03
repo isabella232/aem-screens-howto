@@ -53,6 +53,8 @@ AEM version|Compatibility           |Comments
 
 :warning: The channels in this project do not work in offline mode at the moment.
 
+:warning: The channels in this project do not work in offline mode at the moment.
+
 ### Features built upon
 
 The solution uses:
