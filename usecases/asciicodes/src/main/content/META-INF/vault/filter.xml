@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/content/campaigns/screens-howto" mode="update"/>
+    <filter root="/content/campaigns/screens-howto/asciicodes-based-campaigns"/>
     <filter root="/content/screens/screens-howto/channels/data-trigger-asciicodes"/>
     <filter root="/libs/screens/clientlibs/contexthub/stores/asciicodes"/>
-    <filter root="/conf/screens-howto/settings/cloudsettings/configuration/contexthub" mode="update"/>
-    <filter root="/conf/screens-howto/settings/wcm/segments" mode="update"/>
-    <filter root="/etc/cloudsettings/screens-howto/contexthub" mode="update" />
-    <filter root="/etc/segmentation/contexthub/screens-howto" mode="update" />
+    <filter root="/conf/screens-howto/settings/cloudsettings/configuration/contexthub/asciicodes"/>
+    <filter root="/conf/screens-howto/settings/cloudsettings/configuration/contexthub/ui/asciicodes"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-ascii-a"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-ascii-b"/>
+    <filter root="/etc/cloudsettings/screens-howto/contexthub/asciicodes"/>
+    <filter root="/etc/cloudsettings/screens-howto/contexthub/ui/asciicodes"/>
+    <filter root="/etc/segmentation/contexthub/screens-howto/screens-howto-ascii-a"/>
+    <filter root="/etc/segmentation/contexthub/screens-howto/screens-howto-ascii-b"/>
 </workspaceFilter>

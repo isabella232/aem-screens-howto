@@ -8,4 +8,9 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="Screens HowTo"
         sling:resourceType="screens/core/components/project"/>
+    <apps/>
+    <channels/>
+    <devices/>
+    <locations/>
+    <schedules/>
 </jcr:root>
