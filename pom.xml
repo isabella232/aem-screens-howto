@@ -59,11 +59,13 @@
 
         <module>usecases/accuweather</module>
         <module>usecases/asciicodes</module>
+        <module>usecases/damdrivenfolder</module>
         <module>usecases/damdriventags</module>
         <module>usecases/experiencefragments</module>
         <module>usecases/languagecopies</module>
         <module>usecases/launches</module>
         <module>usecases/livecopies</module>
+        <module>usecases/multizoneeditor</module>
         <module>usecases/specialevents</module>
         <module>usecases/statichtmlcontent</module>
         <module>usecases/subsequences</module>

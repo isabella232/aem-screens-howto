@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/screens-howto/clientlibs/authoring"/>
+    <filter root="/apps/screens-howto/components/screens/content/responsivegrid"/>
+    <filter root="/apps/screens-howto/templates/splitscreenchannel/multizone"/>
+    <filter root="/content/screens/screens-howto/channels/multizone-editor"/>
+</workspaceFilter>

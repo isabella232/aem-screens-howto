@@ -14,6 +14,7 @@
         jcr:title="Channel with weather based content"
         sling:resourceSuperType="screens/core/components/channel"
         sling:resourceType="screens/core/components/sequencechannel"
+        forceRemoteContent="true"
         offTime_x0040_TypeHint="Date"
         onTime_x0040_TypeHint="Date"
         socialMedia_x0040_TypeHint="String[]">

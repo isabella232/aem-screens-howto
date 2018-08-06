@@ -34,7 +34,7 @@
     <name>screens-howto - Use Case: Launches</name>
     <description>Content update example using AEM Launches</description>
     <packaging>content-package</packaging>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.5-SNAPSHOT</version>
 
     <!-- SVN Settings -->
     <scm>

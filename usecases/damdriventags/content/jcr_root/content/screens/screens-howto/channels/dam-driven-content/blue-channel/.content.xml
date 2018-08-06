@@ -3,13 +3,14 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:cssClass="aem-Layout aem-Layout--1x1"
-        cq:designPath="/libs/settings/wcm/designs/screens"
+        cq:designPath="/etc/designs/screens-howto"
         cq:tags="[screens-howto:dam-driven-content/blue]"
         cq:template="/apps/screens-howto/templates/tagchannel"
         jcr:primaryType="cq:PageContent"
         jcr:title="Blue Channel"
         sling:resourceSuperType="screens/core/components/sequencechannel"
-        sling:resourceType="screens-howto/components/screens/tagchannel">
+        sling:resourceType="screens-howto/components/screens/tagchannel"
+        forceRemoteContent="true">
         <par
             cq:cssClass="aem-LayoutCell--1-1"
             jcr:primaryType="nt:unstructured"

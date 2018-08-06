@@ -13,7 +13,8 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="Simple content example"
         sling:resourceSuperType="screens/core/components/channel"
-        sling:resourceType="screens/core/components/sequencechannel">
+        sling:resourceType="screens/core/components/sequencechannel"
+        forceRemoteContent="true">
         <par
             cq:cssClass="aem-LayoutCell--1-1"
             jcr:primaryType="nt:unstructured"

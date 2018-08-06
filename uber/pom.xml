@@ -34,7 +34,7 @@
     <name>screens-howto - Uber package</name>
     <description>Uber package for screens-howto</description>
     <packaging>content-package</packaging>
-    <version>1.0.5-SNAPSHOT</version>
+    <version>1.0.7-SNAPSHOT</version>
 
     <!-- SVN Settings -->
     <scm>
@@ -134,6 +134,11 @@
                         </subPackage>
                         <subPackage>
                             <groupId>com.adobe.cq.screens</groupId>
+                            <artifactId>screens-howto.usecases.damdrivenfolder</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+                        <subPackage>
+                            <groupId>com.adobe.cq.screens</groupId>
                             <artifactId>screens-howto.usecases.damdriventags.content</artifactId>
                             <filter>true</filter>
                         </subPackage>
@@ -155,6 +160,11 @@
                         <subPackage>
                             <groupId>com.adobe.cq.screens</groupId>
                             <artifactId>screens-howto.usecases.livecopies</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
+                        <subPackage>
+                            <groupId>com.adobe.cq.screens</groupId>
+                            <artifactId>screens-howto.usecases.multizoneeditor</artifactId>
                             <filter>true</filter>
                         </subPackage>
                         <subPackage>
@@ -226,12 +236,12 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>com.adobe.cq.screens</artifactId>
-            <version>1.4.58</version>
+            <version>1.4.74</version>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-core-pkg</artifactId>
-            <version>1.4.62</version>
+            <version>1.4.78</version>
             <type>zip</type>
         </dependency>
         <dependency>
@@ -245,13 +255,13 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.ui.apps</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.4</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.ui.content</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.4</version>
             <type>zip</type>
         </dependency>
         <dependency>
@@ -268,60 +278,72 @@
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
+            <artifactId>screens-howto.usecases.damdrivenfolder</artifactId>
+            <version>1.0.0</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.damdriventags</artifactId>
             <version>1.0.2</version>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.damdriventags.content</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.4</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.experiencefragments</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.4</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.languagecopies</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.4</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.launches</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.4</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.livecopies</artifactId>
+            <version>1.0.4</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq.screens</groupId>
+            <artifactId>screens-howto.usecases.multizoneeditor</artifactId>
             <version>1.0.2</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.specialevents</artifactId>
-            <version>1.0.2</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.cq.screens</groupId>
-            <artifactId>screens-howto.usecases.statichtmlcontent</artifactId>
-            <version>1.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.cq.screens</groupId>
-            <artifactId>screens-howto.usecases.statichtmlcontent.content</artifactId>
             <version>1.0.4</version>
             <type>zip</type>
         </dependency>
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
+            <artifactId>screens-howto.usecases.statichtmlcontent</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq.screens</groupId>
+            <artifactId>screens-howto.usecases.statichtmlcontent.content</artifactId>
+            <version>1.0.6</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.subsequences</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.4</version>
             <type>zip</type>
         </dependency>
 

@@ -34,7 +34,7 @@
     <name>screens-howto - Use Case: Static Html Component Screens experience - Content Package"</name>
     <description>Static html Component usage</description>
     <packaging>content-package</packaging>
-    <version>1.0.5-SNAPSHOT</version>
+    <version>1.0.7-SNAPSHOT</version>
 
     <!-- SVN Settings -->
     <scm>
@@ -217,7 +217,7 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.statichtmlcontent</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.4</version>
         </dependency>
     </dependencies>
 

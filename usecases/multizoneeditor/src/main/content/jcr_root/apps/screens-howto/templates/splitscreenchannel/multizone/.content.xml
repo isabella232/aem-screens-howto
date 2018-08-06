@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Template for a multizone sreen channel"
+    jcr:primaryType="cq:Template"
+    jcr:title="Multi-zone Screen Channel"
+    allowedParents="[/libs/screens/core/templates/channelfolder]"
+    allowedPaths="[/content/screens(/.*)?]"
+    ranking="{Long}10000">
+    <jcr:content
+        cq:cssClass="aem-Layout"
+        cq:designPath="/etc/designs/screens-howto"
+        cq:deviceGroups="[mobile/groups/responsive]"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceSuperType="screens/core/components/channel"
+        sling:resourceType="screens/core/components/multiscreenchannel"
+        forceRemoteContent="true">
+        <grid
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="screens-howto/components/screens/content/responsivegrid"/>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured"/>
+        </cq:responsive>
+        <offline-config/>
+    </jcr:content>
+</jcr:root>

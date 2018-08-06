@@ -9,7 +9,7 @@ The audience for this project is mainly product managers, solutions consultants 
 Getting started
 ---------------
 
-- Download the [last release](https://git.corp.adobe.com/Screens/screens-howto/releases)
+- Download the [last release](../../releases/latest)
 - Install the content package in AEM using the [Package Manager](http://localhost:4502/crx/packmgr/index.jsp) accessible through Tools &rarr; Deployment &rarr; Packages
 - Go through the [use cases](#use-cases)
 
@@ -19,8 +19,8 @@ The Screens HowTo project is meant to work on the latest Screens feature packs o
 
 AEM|Screens FP|Compatibility
 -|-|-
-6.4.1|[Screens FP1](https://artifactory.corp.adobe.com/artifactory/maven-aem-release-local/com/adobe/cq/feature/cq-6.4.0-featurepack-screens/1.0.144/)|:white_check_mark:
-6.3.2|[Screens FP3](https://artifactory.corp.adobe.com/artifactory/maven-aem-release-local/com/adobe/cq/feature/cq-6.3.0-featurepack-screens/1.0.460/)|:white_check_mark:
+6.4.1|[Screens FP1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/screens/cq-6.4.0-featurepack-screens)|:white_check_mark:
+6.3.2|[Screens FP3](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-screens)|:white_check_mark:
 
 Use Cases
 ---------
@@ -29,11 +29,13 @@ Name|Description
 -|-
 [accuweather](usecases/accuweather/)|Dynamic content based on live weather information
 [asciicodes](usecases/asciicodes/)|Dynamic content based on keyboard input
-[damdriventags](usecases/damdriventags/)|Authoring the content of the Screens channels directly from _AEM Assets_ tags
+[damdrivenfolder](usecases/damdrivenfolder/)|Authoring the content of the Screens channels directly from _AEM Assets_ folder using a non-editable sequence
+[damdriventags](usecases/damdriventags/)|Authoring the content of the Screens channels directly from _AEM Assets_ tags. A different take on the DAM-driver approach with a non-editable channel instead of a non-editable sequence
 [experiencefragments](usecases/experiencefragments/)|Reuse _Experience Fragments_ coming from AEM Sites directly in the Screens channels
 [languagecopies](usecases/languagecopies/)|Automatic channel content translation leveraging _AEM Sites Translation Cloud Services_
 [launches](usecases/launches/)|Scheduled content rollout leveraging _AEM Sites Launches_
 [livecopies](usecases/livecopies/)|Branch-specific content variations leveraging _AEM Sites Live Copies_
+[multizoneeditor](usecases/multizoneeditor/)|Multi-zone channel editor that allows custom layouts by leveraging _AEM Responsive Layout_
 [specialevents](usecases/specialevents/)|Branch-specific scheduled content overrides for special events using day-parting and channel priorities
 [statichtmlcontent](usecases/statichtmlcontent/)|Importing external HTML/JS/CSS experiences directly in your channel (for instance _Animate CC_ experiences)
 [subsequences](usecases/subsequences/)|Branch-specific content variations leveraging _Screens Embedded Sequences_

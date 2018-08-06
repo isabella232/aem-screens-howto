@@ -33,8 +33,8 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <artifactId>screens-howto.usecases.damdriventags.reactor</artifactId>
-    <name>Screens-Howto - Use Case: DAM driven Screens experience - Reactor Project</name>
-    <description>Maven multi module project for AEM Screens-Howto - Usecase: DAM Driven.</description>
+    <name>Screens-Howto - Use Case: DAM driven tags Screens experience - Reactor Project</name>
+    <description>Maven multi module project for AEM Screens-Howto - Usecase: DAM Driven Tags.</description>
     <packaging>pom</packaging>
 
     <!-- ====================================================================== -->
