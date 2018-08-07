@@ -8,7 +8,7 @@
         cq:designPath="/etc/designs/screens-howto"
         cq:lastModified="{Date}2018-01-01T00:00:00.000+00:00"
         cq:lastModifiedBy="admin"
-        cq:target-ambits="[/content/campaigns/screens-howto/6-5]"
+        cq:target-ambits="[/content/campaigns/screens-howto/weather-based-campaigns/6-5]"
         cq:template="/libs/screens/core/templates/sequencechannel"
         jcr:primaryType="cq:PageContent"
         jcr:title="Channel with weather based content (6.5)"
