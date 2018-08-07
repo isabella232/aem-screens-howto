@@ -35,6 +35,5 @@
                 text="&lt;h1>Special Event — Master Channel&lt;/h1>&#xa;&lt;p>This is the &lt;code>3rd&lt;/code> item in the &lt;i>Master Channel&lt;/i>&lt;/p>&#xa;"
                 textIsRich="true"/>
         </par>
-        <offline-config/>
     </jcr:content>
 </jcr:root>

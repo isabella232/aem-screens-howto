@@ -5,8 +5,6 @@
         cq:contextHubPath="/etc/cloudsettings/screens-howto/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub/screens-howto"
         cq:designPath="/etc/designs/screens-howto"
-        cq:lastModified="{Date}2018-01-01T00:00:00.000+00:00"
-        cq:lastModifiedBy="admin"
         jcr:primaryType="cq:PageContent"
         jcr:title="HowTo: Sunny weather"
         sling:resourceType="cq/contexthub/components/segment-page"
@@ -19,8 +17,6 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/parsys">
                 <genderFemale
-                    jcr:lastModified="{Date}2018-01-16T17:18:30.655+01:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="cq/contexthub/components/traits/generic-comparison/variants/property-value"
                     dataType="string"

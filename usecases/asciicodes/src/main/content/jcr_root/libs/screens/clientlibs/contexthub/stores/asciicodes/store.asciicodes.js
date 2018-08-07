@@ -37,9 +37,11 @@
      */
     function AsciiCodeStore(name, config) {
         this.config = {};
-        Object.keys(config).forEach(function(k) {
-            this.config[k] = config[k];
-        }.bind(this));
+        if (config) {
+            Object.keys(config).forEach(function (k) {
+                this.config[k] = config[k];
+            }.bind(this));
+        }
         this.init(name, this.config);
 
         // Reset the ascci code in the store

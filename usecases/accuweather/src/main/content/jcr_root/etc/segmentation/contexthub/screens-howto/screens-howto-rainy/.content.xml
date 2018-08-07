@@ -5,8 +5,6 @@
         cq:contextHubPath="/etc/cloudsettings/screens-howto/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub/screens-howto"
         cq:designPath="/etc/designs/screens-howto"
-        cq:lastModified="{Date}2018-01-01T00:00:00.000+00:00"
-        cq:lastModifiedBy="admin"
         jcr:primaryType="cq:PageContent"
         jcr:title="HowTo: Rainy or cloudy weather"
         sling:resourceType="cq/contexthub/components/segment-page"
@@ -19,18 +17,12 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/parsys">
                 <operator_or
-                    jcr:created="{Date}2018-01-17T15:22:34.371+01:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2018-01-17T15:22:34.371+01:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="cq/contexthub/components/traits/logic/operator-or">
                     <orpar
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/parsys">
                         <rain
-                            jcr:lastModified="{Date}2018-01-16T17:18:30.655+01:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="cq/contexthub/components/traits/generic-comparison/variants/property-value"
                             dataType="string"
@@ -45,8 +37,6 @@
                                 value="rain"/>
                         </rain>
                         <cloud
-                            jcr:lastModified="{Date}2018-01-17T15:22:51.809+01:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="cq/contexthub/components/traits/generic-comparison/variants/property-value"
                             dataType="string"
@@ -61,8 +51,6 @@
                                 value="cloud"/>
                         </cloud>
                         <fog
-                            jcr:lastModified="{Date}2018-01-17T15:22:51.809+01:00"
-                            jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="cq/contexthub/components/traits/generic-comparison/variants/property-value"
                             dataType="string"

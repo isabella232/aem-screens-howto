@@ -6,4 +6,5 @@
         <exclude pattern="/libs/screens/core/components/channel/ContextHub.class"/>
     </filter>
     <filter root="/libs/screens/core/components/sequencechannel" mode="update" />
+    <filter root="/libs/screens/clientlibs/sequencechannel-embed" mode="update" />
 </workspaceFilter>
