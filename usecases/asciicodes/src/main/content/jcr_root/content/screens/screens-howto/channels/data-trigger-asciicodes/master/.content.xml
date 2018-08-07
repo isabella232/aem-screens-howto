@@ -8,7 +8,7 @@
         cq:designPath="/etc/designs/screens-howto"
         cq:lastModified="{Date}2018-01-01T00:00:00.000+00:00"
         cq:lastModifiedBy="admin"
-        cq:target-ambits="[/content/campaigns/screens-howto/asciicodes-based-campaigns/master]"
+        cq:target-ambits="[/content/campaigns/screens-howto/asciicodes-based-campaigns]"
         cq:template="/libs/screens/core/templates/sequencechannel"
         jcr:primaryType="cq:PageContent"
         jcr:title="Simple content example"

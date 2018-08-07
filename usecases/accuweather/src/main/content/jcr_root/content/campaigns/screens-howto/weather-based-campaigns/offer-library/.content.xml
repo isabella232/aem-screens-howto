@@ -4,7 +4,7 @@
     <jcr:content
         cq:template="/libs/cq/personalization/templates/offerlibrary"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Screens HowTo"
+        jcr:title="AccuWeather Offers"
         sling:resourceType="cq/personalization/components/offerlibrarypage">
         <par
             jcr:primaryType="nt:unstructured"
