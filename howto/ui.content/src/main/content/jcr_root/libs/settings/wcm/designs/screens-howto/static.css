@@ -1,0 +1,102 @@
+body.aem-Layout {
+    font: normal 16px/1.1em Adobe Clean, Helvetica Neue, Verdana, Arial;
+    margin: 0;
+    padding: 0;
+}
+
+body:before {
+    background: url('logo.png') no-repeat bottom red;
+    background-size: contain;
+    content: '';
+    height: 8vw;
+    position: absolute;
+    right: 2vw;
+    top: 0;
+    width: 5vw;
+    z-index: 1;
+}
+
+.aem-AuthorLayer-Design body:before,
+.aem-AuthorLayer-Developer body:before,
+.aem-AuthorLayer-Edit body:before,
+.aem-AuthorLayer-Targeting body:before,
+.aem-AuthorLayer-Timewarp body:before {
+    display: none;
+}
+
+h1 {
+    background: #eee;
+    margin: -2% -2% 0 -2%;
+    padding: 2%;
+    line-height: 1em;
+}
+
+.aem-AuthorLayer-Design h1,
+.aem-AuthorLayer-Developer h1,
+.aem-AuthorLayer-Edit h1,
+.aem-AuthorLayer-Targeting h1,
+.aem-AuthorLayer-Timewarp h1 {
+    margin: 0;
+}
+
+ul {
+    padding-left: 1em;
+    list-style: square inside;
+}
+
+p {
+    margin-bottom: .5em;
+}
+
+code {
+    background: #eee;
+    padding: 0 .2em
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background: #eee;
+}
+
+td {
+    padding: .1em .5em
+}
+
+caption {
+    text-transform: uppercase;
+}
+
+/* Highlight zones */
+
+/* Highlight and number zones for better visibility. */
+.grid.responsivegrid {
+  counter-reset: zones;
+}
+
+.responsivegrid .responsivegrid { border: 1px solid #eee; }
+.responsivegrid .responsivegrid:before {
+  position: relative;
+  display: block;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 4em;
+  line-height: 0;
+  color: #eee;
+
+  counter-increment: zones;
+  content: "Zone " counter(zones);
+}
+.responsivegrid .responsivegrid .text { background: none; }
+
+.aem-AuthorLayer-Edit .responsivegrid .responsivegrid:before { top: 1em; }
+.aem-AuthorLayer-Targeting .responsivegrid .responsivegrid:before { top: 1em; }
+.aem-AuthorLayer-Layouting .responsivegrid .responsivegrid:before { top: 1em; }
+.aem-AuthorLayer-Design .responsivegrid .responsivegrid:before { top: 1em; }
+.aem-AuthorLayer-Scaffolding .responsivegrid .responsivegrid:before { top: 1em; }
+.aem-AuthorLayer-Developer .responsivegrid .responsivegrid:before { top: 1em; }
+.aem-AuthorLayer-Timewarp .responsivegrid .responsivegrid:before { top: 1em; }

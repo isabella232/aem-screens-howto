@@ -4,7 +4,7 @@
     <jcr:content
         cq:contextHubPath="/conf/screens-howto/settings/cloudsettings/configuration/contexthub"
         cq:contextHubSegmentsPath="/conf/screens-howto/settings/wcm/segments"
-        cq:designPath="/etc/designs/screens-howto"
+        cq:designPath="/libs/settings/wcm/designs/screens-howto"
         jcr:primaryType="cq:PageContent"
         jcr:title="HowTo: ASCII Code A"
         sling:resourceType="cq/contexthub/components/segment-page"

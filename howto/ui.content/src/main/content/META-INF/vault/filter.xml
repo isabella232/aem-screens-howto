@@ -8,4 +8,5 @@
     <filter root="/etc/segmentation/contexthub/screens-howto"/>
     <filter root="/etc/designs/screens-howto"/>
     <filter root="/etc/tags/screens-howto"/>
+    <filter root="/libs/settings/wcm/designs/screens-howto"/>
 </workspaceFilter>
