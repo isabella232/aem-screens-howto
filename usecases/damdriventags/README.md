@@ -1,44 +1,49 @@
-DAM driven tags Screens experience
+DAM-Driven Authoring Based on Tags
 ==================================
 
 Use Case
 --------
-As a customer you can be overwhelmed by the power of DCC, especially if you're already an expert in DAM features.
-This module contains a sample on how to edit and maintain the content of a Channel via DAM instead of DCC.
-The purpose is to strictly disallow editing via DCC and instead leverage the full potential of DAM, including:
-* tagging
 
-More info:
-* research story: [[research] Create a DAM driven Tagging-Channel in HowTo](https://jira.corp.adobe.com/browse/CQ-4237003)
-* implementation story: [[screens-howto] Create DAM driven tagging channel](https://jira.corp.adobe.com/browse/CQ-4237003).
+Acme Corp uses Screens to manage its digital signage displays in stores and show the top products of the seasonal collection on the displays. Acme Corp also outsourced all the digital assets handling to a local agency and that agency usually directly uploads its final assets to the DAM where the Acme authors will be able to pick them up for their content. In order to avoid having to manually edit channels whenever a new asset is provided by the design agency, Acme Corp wants to directly play all assets with a given Tag in its channel, effectively bypassing the Screens authoring if possible.
+
+This how-to project walks you through how to achieve this DAM-driven channel authoring using Tagging and a custom _sequence channel_ to automatically inline any asset with a given Tag directly in the channel.
+
+This module contains a sample on how to leverage a custom non-editable _sequence channel_ in order to directly load assets with a given Tag and effectively disabling editing of the sequence. Contrary to the [damdrivenfolder](../damdrivenfolder/) sample, here the asset can have multiple tags and be re-used in multiple channels. The advantage is that you can leverage AEM's well established Tagging feature, re-use existing Tags and organise assets in DAM as you wish. In order to archieve a similar behaviour than the [damdrivenfolder](../damdrivenfolder/) sample, the workflow launcher can be customised to listen only to specific asset folders. A known limitation is that once a _Tag Channel_ has been created the accociated tags cannot be modified anymore.
+
+
+### Architecture Diagram
+
+![DAM-driven folder Architecture Diagram](diagram.png)
 
 How to Use the Sample Content
 -----------------------------
-* Add more tags to /etc/tags/screens-howto/damdriven-content (can do the same from [AEM Tags](http://localhost:4502/libs/cq/tagging/gui/content/tags.html/etc/tags))
-* Add more tagged assets to /content/dam/screens-howto/damdriven or change tags on the existing assets (can do the same from [AEM Assets](http://localhost:4502/assets.html/content/dam))
-* Add more tagged channels to /content/screens/channels/dam-driven-content (can do the same from [AEM screens-howto -> channels -> dam-driven-content](http://localhost:4502/screens.html/content/screens/screens-howto/channels/dam-driven-content))
+
+* Add more [AEM Tags](http://localhost:4502/aem/tags) (Path: /etc/tags/screens-howto/damdriven-content)
+* Tag more assets via [AEM Assets](http://localhost:4502/assets.html/content/dam) (Path: /content/dam/screens-howto/damdriven) 
+* Add more tagged channels via [AEM screens-howto -> channels -> dam-driven-content](http://localhost:4502/screens.html/content/screens/screens-howto/channels/dam-driven-content) (Path: /content/screens/channels/dam-driven-content)
+
+---
 
 Technical Details
 -----------------
+
+### Compatibility
+
+AEM version|Compatibility           |Comments
+-----------|------------------------|--------
+6.3        |:white_check_mark:      |
+6.4        |:white_check_mark:      |
+
 ### Features built upon
-* Workflow launcher
-* Workflow model
-* Tags
-* Assets
-* Channel component and template
 
-### Implementation
-* Custom workflow launcher to trigger on asset metadata modified: /etc/workflow/launcher/config/screens-howto/damdriven/sync-tagged-assets
-* Custom workflow model to start the sync process: /etc/workflow/models/screens-howto/damdriven-sync-tagged-assets
-* Tag Channel component based on Sequence Channel: /apps/screens-howto/components/screens/tagchannel
-* Tag Channel template based on Sequence Channel: /apps/screens-howto/templates/tagchannel
-* Example tags: /etc/tags/screens-howto/dam-driven-content
-* Example assets: /content/dam/screens-howto/damdriven
-* Example channels and location: /content/screens/screens-howto
-* Custom workflow process to sync assets to channels: SyncTaggedDamAssetsWorkflowProcess
+The solution uses:
+- A _Tag channel_ based on a _sequence channel_
+- [Workflow launcher](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/workflows.html)
+- [Workflow model](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/workflows.html#Model)
+- [AEM Tags](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/tags.html)
 
-Installation
-------------
+### Manual installation
+
 This module requires HowTo project and is part of the install process. Follow [instructions here](../../README.md).
 
 If you still want to install the module individually, you can run:
@@ -47,20 +52,17 @@ If you still want to install the module individually, you can run:
 mvn clean install content-package:install
 ```
 
-Hacks
-------------
-* Overlay of `libs/screens/dcc/components/dashboard/channel.js` and `libs/screens/dcc/components/dashboard/channelinfo/channelinfo.html` in order to show "Channel Type: Tagged Channel" in Channel Dashboard.
-* Overlay of `libs/screens/dcc/components/actionRelationships.js` in order to disable the Edit button from DCC for tagged channels.
+### Manual content setup
 
-Limitations
-------------
-* Once a tagged channel is created with certain tags, they cannot be modified anymore.
-Syncing assets from DAM when tags on channels are updated after channel creation was not part of the implementation and is not supported.
-Due to this limitation, the tag field on channels is disabled in edit mode for AEM 6.4 (this would work for AEM 6.3.2 after [Backport GRANITE-17626 - Disabled property in new tagfield component doesn't work](https://jira.corp.adobe.com/browse/NPR-23581]) is completed).
+1. [Create a screens project](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/creating-a-screens-project.html)
+0. [Create a new _Tag Channel_](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/managing-channels.html#CreatingaNewChannel) and tag the channel
+0. Upload an asset and tag it with the same tag
 
-* Problem: Workflow is triggered for all assets in DAM for every tag change.
-    * Possible workaround: Change the "globbing path" for the workflow launcher to point to a specific asset-folder.
 
-* Problem: Launchers and workflows are async. That means we cannot show a loading indicator in DAM.
-The user will always assume that the task of syncing and maybe even creating the offline config automatically will be done.
-    * Possible workaround for offline config: Add a check in the Publish Button before publishing to check if workflow is finished (Author/Publish setup only).
+Sample Content Links
+--------------------
+
++ Content
+    + [Main Channels](http://localhost:4502/screens.html/content/screens/screens-howto/channels/dam-driven-content)
+    + [Assets Folder](http://localhost:4502/assets.html/content/dam/screens-howto/damdriven)
+
