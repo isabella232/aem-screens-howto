@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/screens-howto"/>
-    <filter root="/libs/screens/core/components/channel" mode="update">
-        <include pattern="/libs/screens/core/components/channel/ContextHub.java"/>
-        <exclude pattern="/libs/screens/core/components/channel/ContextHub.class"/>
-    </filter>
-    <filter root="/libs/screens/core/components/sequencechannel" mode="update" />
-    <filter root="/libs/screens/clientlibs/sequencechannel-embed" mode="update" />
 </workspaceFilter>
