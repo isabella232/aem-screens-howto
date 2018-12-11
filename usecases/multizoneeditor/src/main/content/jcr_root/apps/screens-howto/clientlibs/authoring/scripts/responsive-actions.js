@@ -106,7 +106,7 @@
                 .then(function() {
                     ns.ContentFrame.reload();
                 })
-                .catch(function(e) {
+                ['catch'](function(e) {
                     console.error(e);
                 });
         };
