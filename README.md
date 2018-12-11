@@ -19,8 +19,8 @@ The Screens HowTo project is meant to work on the latest Screens feature packs o
 
 AEM|Screens FP|Compatibility
 -|-|-
-6.4.1|[Screens FP1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/screens/cq-6.4.0-featurepack-screens)|:white_check_mark:
-6.3.2|[Screens FP3](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-screens)|:white_check_mark:
+6.4.2|[Screens FP1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/screens/cq-6.4.0-featurepack-screens)|:white_check_mark:
+6.3.3|[Screens FP3](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-screens)|:white_check_mark:
 
 Use Cases
 ---------
