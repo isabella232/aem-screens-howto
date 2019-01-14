@@ -261,7 +261,7 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.ui.content</artifactId>
-            <version>1.0.12</version>
+            <version>1.0.14</version>
             <type>zip</type>
         </dependency>
         <dependency>
