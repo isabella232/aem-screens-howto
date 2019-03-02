@@ -24,7 +24,7 @@
   "author": "AEM-Screens",
   "license": "Adobe",
   "devDependencies": {
-    "eslint": "^5.1.0",
+    "eslint": "^5.14.1",
     "eslint-config-cq-screens": "^4.0.0"
   }
 }
