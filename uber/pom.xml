@@ -182,6 +182,11 @@
                             <artifactId>screens-howto.usecases.subsequences</artifactId>
                             <filter>true</filter>
                         </subPackage>
+                        <subPackage>
+                            <groupId>com.adobe.cq.screens</groupId>
+                            <artifactId>screens-howto.usecases.datatriggers</artifactId>
+                            <filter>true</filter>
+                        </subPackage>
                     </subPackages>
                 </configuration>
             </plugin>
@@ -350,6 +355,12 @@
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.subsequences</artifactId>
             <version>1.0.6</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq.screens</groupId>
+            <artifactId>screens-howto.usecases.datatriggers</artifactId>
+            <version>1.0.2</version>
             <type>zip</type>
         </dependency>
     </dependencies>
