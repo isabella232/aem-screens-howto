@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cssClass="aem-Layout aem-Layout--1x1"
+        cq:designPath="/libs/settings/wcm/designs/screens"
+        cq:template="/libs/screens/core/templates/sequencechannel"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Single Play"
+        sling:resourceSuperType="screens/core/components/channel"
+        sling:resourceType="screens/core/components/sequencechannel">
+        <par
+            cq:cssClass="aem-LayoutCell--1-1"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="screens/core/components/sequencechannel/sequence"
+            duration="8000">
+            <image
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="screens/core/components/content/image"
+                duration="1000"
+                fileReference="/content/dam/screens-howto/datatrigger/datatrigger_1.jpeg"
+                />
+            <image_two
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="screens/core/components/content/image"
+                duration="1000"
+                fileReference="/content/dam/screens-howto/datatrigger/datatrigger_2.jpeg"
+                />
+            <image_three
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="screens/core/components/content/image"
+                duration="1000"
+                fileReference="/content/dam/screens-howto/datatrigger/datatrigger_3.jpeg"
+                />
+            <image_four
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="screens/core/components/content/image"
+                duration="1000"
+                fileReference="/content/dam/screens-howto/datatrigger/datatrigger_4.jpeg"
+                />
+            <image_five
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="screens/core/components/content/image"
+                duration="1000"
+                fileReference="/content/dam/screens-howto/datatrigger/datatrigger_5.jpeg"
+                />
+        </par>
+        <offline-config/>
+    </jcr:content>
+</jcr:root>

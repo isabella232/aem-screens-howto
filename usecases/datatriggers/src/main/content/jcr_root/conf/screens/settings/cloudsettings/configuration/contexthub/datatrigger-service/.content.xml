@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:lastModified,sling:HierarchyNode]"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="DataTrigger Service"
+    sling:configCollectionInherit="true"
+    sling:configPropertyInherit="true"
+    sling:resourceType="granite/contexthub/cloudsettings/components/basestore"
+    configjson="\{ &quot;service&quot;: { &quot;host&quot;: &quot;sheets.googleapis.com&quot;, &quot;port&quot;: 80, &quot;path&quot;: &quot;/v4/spreadsheets/sheet_id/values/Sheet1&quot;, &quot;jsonp&quot;: false, &quot;secure&quot;: true, &quot;params&quot;: { &quot;key&quot;: &quot;api_key&quot; } }, &quot;pollInterval&quot;: 1000 }"
+    enabled="{Boolean}true"
+    required="{Boolean}true"
+    storeType="contexthub.generic-jsonp"/>

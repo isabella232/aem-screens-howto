@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+
+    <filter root="/content/dam/screens-howto/datatrigger" mode="merge"/>
+    <filter root="/content/screens/screens-howto/locations/data-triggers--web-service"/>
+    <filter root="/content/screens/screens-howto/channels/data-triggers--web-service"/>
+    <filter root="/conf/screens/settings" mode="merge"/>
+
+</workspaceFilter>

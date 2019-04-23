@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:exif="http://ns.adobe.com/exif/1.0/" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="1bd3c327-f702-4879-beef-bc69995d56b2">
+    <jcr:content
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:extracted="{Date}2019-04-17T12:16:51.497+03:00"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}-1"
+            dam:Physicalheightininches="{Decimal}-1.0"
+            dam:Physicalwidthindpi="{Long}-1"
+            dam:Physicalwidthininches="{Decimal}-1.0"
+            dam:Progressive="no"
+            dam:sha1="ac74dc6f99fff362918c2a3719c148ac2cfaa358"
+            dam:size="{Long}14255"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2019-04-10T19:38:21.947+03:00"
+            exif:ColorSpace="{Long}1"
+            exif:PixelXDimension="{Long}720"
+            exif:PixelYDimension="{Long}405"
+            jcr:lastModified="{Date}2019-04-17T12:16:53.719+03:00"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            tiff:ImageLength="{Long}405"
+            tiff:ImageWidth="{Long}720"
+            tiff:ResolutionUnit="{Long}2"
+            tiff:XResolution="54/1"
+            tiff:YResolution="54/1"/>
+        <related jcr:primaryType="nt:unstructured"/>
+        <usages
+            dam:score="{Long}1"
+            jcr:primaryType="nt:unstructured"
+            usedBy="[aem]">
+            <aem
+                jcr:primaryType="nt:unstructured"
+                count="{Long}1"
+                lastUsed="{Date}2019-04-11T17:21:43.170+03:00"/>
+        </usages>
+    </jcr:content>
+</jcr:root>

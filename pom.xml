@@ -69,6 +69,7 @@
         <module>usecases/specialevents</module>
         <module>usecases/statichtmlcontent</module>
         <module>usecases/subsequences</module>
+        <module>usecases/datatriggers</module>
 
         <module>uber</module>
     </modules>
