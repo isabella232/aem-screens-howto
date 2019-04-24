@@ -35,14 +35,14 @@
     <name>Screens-Howto - Use Case: Data Triggers - Content Package</name>
     <description>Project showcasing the Data Triggered channel switch with Single Play and Play and Hold runmodes</description>
     <packaging>content-package</packaging>
-    <version>1.0.4</version>
+    <version>1.0.5-SNAPSHOT</version>
 
     <!-- Git Settings -->
     <scm>
         <connection>scm:git:git@git.corp.adobe.com:Screens/screens-howto.git</connection>
         <developerConnection>scm:git:git@git.corp.adobe.com:Screens/screens-howto.git</developerConnection>
         <url>https://git.corp.adobe.com/Screens/screens-howto/tree/master/usecases/datatriggers/content</url>
-        <tag>screens-howto.usecases.datatriggers-1.0.4</tag>
+        <tag>development</tag>
     </scm>
 
     <!-- ====================================================================== -->
