@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:cssClass="aem-Layout aem-Layout--1x1"
-        cq:designPath="/libs/settings/wcm/designs/screens"
+        cq:designPath="/etc/designs/screens-howto"
         cq:template="/libs/screens/core/templates/sequencechannel"
         jcr:primaryType="cq:PageContent"
         jcr:title="Single Play"
