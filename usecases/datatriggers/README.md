@@ -13,16 +13,18 @@ How to Use the Sample Content
 -----------------------------
 
 - Enable Data Trigger feature using the [Screens Data triggered Content (ContextHub) Feature Flag](http://localhost:4502/system/console/configMgr)
-- Preview the [Data Triggers Web Service Display](http://localhost:4502/screens.html/content/screens/screens-howto/locations/data-triggers--web-service/main-office)
+- Preview the [Data Triggers Web Service Display](http://localhost:4502/screens.html/content/screens/screens-howto/locations/data-triggers--web-service/main-office) in the Browser-Player.
 - Create a new [Google Sheet](https://docs.google.com/spreadsheets/)
-   The B1 and B2 values are used for this demo.
-- Get the sharable link of the newly created sheet. It contains the sheet_id which will be used later on.
-- Enable the Google Spread Sheets Api from [Google Developer Console](https://console.developers.google.com/apis)
-- Create an API key for the [Sheets API](https://console.developers.google.com/apis/credentials)
-- Replace the "sheet_id" and "api_key" in jsonConf property of /conf/screens/settings/cloudsettings/configuration/contexthub/datatrigger-service node with the values obtained at the steps above 
-- Change the B1/B2 value from FALSE to TRUE in the Google Sheet and observe the browser player
+   The B1 and B2 values are used for this demo. Make sure the Worksheet is called "Sheet1". This can vary depending on the language settings in Google Sheet.  
+- Add "FALSE" to the B1 and B2 columns.
+- Get the sharable link of the newly created sheet. It contains the `sheet_id` which will be used later on.
+- Enable the Google Spread Sheets Api from [Google Developer Console](https://console.developers.google.com/apis).
+- Create an API key for the [Sheets API](https://console.developers.google.com/apis/credentials).
+- Quick test: Open https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values/Sheet1?key={api_key}. It should return a JSON containing the values of the sheet.
+- Go to the [ContextHub Configuration Wizard](http://localhost:4502/libs/granite/cloudsettings/content/wizard.edit.html/conf/screens/settings/cloudsettings/configuration/contexthub/datatrigger-service), click on "Next" and replace the "sheet_id" and "api_key" in the "Detail Configuration (JSON)" section with the values obtained at the steps above.
+- Change the B1/B2 value from FALSE to TRUE in the Google Sheet and observe the Browser-Player.
 - When B1 is set to TRUE, the [Single play channel](http://localhost:4502/editor.html/content/screens/screens-howto/channels/data-triggers--web-service/single-play.edit.html) will be displayed. After the sequence from 1-5 completes, Default channel is displayed.
-- When B2 is set to TRUE, the [Play and hold channel](http://localhost:4502/editor.html/content/screens/screens-howto/channels/data-triggers--web-service/play-and-hold.html) will be displayed. The channel will keep displaying until B2 is reset, it's value is changed from TRUE to a different value
+- When B2 is set to TRUE, the [Play and hold channel](http://localhost:4502/editor.html/content/screens/screens-howto/channels/data-triggers--web-service/play-and-hold.html) will be displayed. The channel will keep displaying until B2 is reset, it's value is changed from TRUE to a different value.
 
 ---
 
