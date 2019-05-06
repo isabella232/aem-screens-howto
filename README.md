@@ -39,6 +39,7 @@ Name|Description
 [specialevents](usecases/specialevents/)|Branch-specific scheduled content overrides for special events using day-parting and channel priorities
 [statichtmlcontent](usecases/statichtmlcontent/)|Importing external HTML/JS/CSS experiences directly in your channel (for instance _Animate CC_ experiences)
 [subsequences](usecases/subsequences/)|Branch-specific content variations leveraging _Screens Embedded Sequences_
+[datatriggers](usecases/datatriggers/)|Channel switch based on an external event.
 
 Contributing
 ------------
