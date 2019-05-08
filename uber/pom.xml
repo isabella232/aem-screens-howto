@@ -360,7 +360,7 @@
         <dependency>
             <groupId>com.adobe.cq.screens</groupId>
             <artifactId>screens-howto.usecases.datatriggers</artifactId>
-            <version>1.0.4</version>
+            <version>1.0.6</version>
             <type>zip</type>
         </dependency>
     </dependencies>
