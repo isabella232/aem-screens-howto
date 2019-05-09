@@ -44,7 +44,7 @@ Player     |Compatibility     |Comments
 Android    |:white_check_mark:|
 iOS        |:white_check_mark:|
 Windows    |:white_check_mark:|
-browser    |:white_check_mark:|
+Browser    |:white_check_mark:|
 
 ### Features built upon
 
@@ -110,6 +110,9 @@ Start by familiarizing yourself with:
 8. Assign the channels created at step (5) and (6) to the [display](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/channel-assignment.html)
    - add Timer, Idle and Initial Load events to the default channel created at step (6)
    - set Segments Paths and Playback Strategy for the channels created at step (5) 
+
+### Known issues
+- In "single play" mode a sequence might switch to the first item of the sequence for a couple of milliseconds before switching back to the next scheduled Channel. 
 
 Sample Content Links
 --------------------
