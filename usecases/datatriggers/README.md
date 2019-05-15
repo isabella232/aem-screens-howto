@@ -112,7 +112,8 @@ Start by familiarizing yourself with:
    - set Segments Paths and Playback Strategy for the channels created at step (5) 
 
 ### Known issues
-- In "single play" mode a sequence might switch to the first item of the sequence for a couple of milliseconds before switching back to the next scheduled Channel. 
+- In "single play" mode a sequence might switch to the first item of the sequence for a couple of milliseconds before switching back to the next scheduled Channel.
+- Channel Switcher in Player: A datatriggered channel will prevent channel switch.
 
 Sample Content Links
 --------------------
