@@ -45,7 +45,7 @@ use([], function() {
                 assets.push({
                     'sling:resourceType': 'screens/core/components/content/video',
                     resourceName: asset.getName(),
-                    file: asset.getPath()
+                    asset: asset.getPath()
                 });
             }
         }
