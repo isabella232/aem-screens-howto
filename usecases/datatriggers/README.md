@@ -20,7 +20,7 @@ How to Use the Sample Content
 - Get the sharable link of the newly created sheet. It contains the `sheet_id` which will be used later on.
 - Enable the Google Spread Sheets Api from [Google Developer Console](https://console.developers.google.com/apis).
 - Create an API key for the [Sheets API](https://console.developers.google.com/apis/credentials).
-- Quick test: Open https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values/Sheet1?key={api_key}. It should return a JSON containing the values of the sheet.
+- Quick test: Open https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}/values/Sheet1?key={api_key}. It should return a JSON containing the values of the sheet. If not: Make sure the Worksheet is called "Sheet1". This can vary depending on the language settings in Google Sheet.
 - Go to the [ContextHub Configuration Wizard](http://localhost:4502/libs/granite/cloudsettings/content/wizard.edit.html/conf/screens/settings/cloudsettings/configuration/contexthub/datatrigger-service), click on "Next" and replace the "sheet_id" and "api_key" in the "Detail Configuration (JSON)" section with the values obtained at the steps above.
 - Change the B1/B2 value from FALSE to TRUE in the Google Sheet and observe the Browser-Player.
 - When B1 is set to TRUE, the [Single play channel](http://localhost:4502/editor.html/content/screens/screens-howto/channels/data-triggers--web-service/single-play.edit.html) will be displayed. After the sequence from 1-5 completes, Default channel is displayed.
