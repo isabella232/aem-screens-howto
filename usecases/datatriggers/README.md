@@ -65,19 +65,11 @@ Config (ContextHub):
 
 ### Manual installation
 
-Step 1) This module requires HowTo project:
+This module requires HowTo project and is part of the install process. Follow [instructions here](../../README.md).
+
+If you still want to install the module individually, you can run:
 
 ```
-cd howto/ui.apps
-mvn clean install content-package:install
-cd howto/ui.content
-mvn clean install content-package:install
-```
-
-Step 2) Then install the use case:
-
-```
-cd usecases/datatriggers
 mvn clean install content-package:install
 ```
 

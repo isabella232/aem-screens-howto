@@ -1,4 +1,3 @@
-
 /*
  * ADOBE CONFIDENTIAL
  *
@@ -65,6 +64,9 @@ use(['helper.js'], function(helper) {
 
         if (page) {
             var device;
+
+            // Publication
+            actionRels[helper.constants.screens.ACT_PUBLISH] = true;
 
             // Displays
             if (helper.isResourceType(page.getContentResource(), [helper.constants.screens.RT_DISPLAY])) {
@@ -133,6 +135,11 @@ use(['helper.js'], function(helper) {
                 }
             }
 
+            // Projects
+            if (helper.isResourceType(page.getContentResource(), [helper.constants.screens.RT_PROJECT])) {
+                actionRels[helper.constants.screens.ACT_UPDATE_OFFLINE_CONTENT] = true;
+            }
+
             // Applications
             if (helper.isResourceType(page.getContentResource(), [helper.constants.screens.RT_APPLICATION])
                 && page.depth > 4) {
@@ -172,6 +179,28 @@ use(['helper.js'], function(helper) {
                         actionRels[helper.constants.screens.ACT_ASSIGN_DEVICE] = true;
                     }
                 }
+
+                var deviceMgr = resource.resourceResolver.adaptTo(com.adobe.cq.screens.device.DeviceManager);
+                var deviceStatus = deviceMgr !== null ? deviceMgr.getDeviceStatus(device.getId()) : null;
+                var activationInfo = deviceStatus !== null ? deviceStatus.getActivationStatus(resourceResolver) : null;
+
+                if (hasPermission(acm, resource, com.day.cq.replication.Replicator.REPLICATE_PRIVILEGE)) {
+                    if (activationInfo !== null && activationInfo.isActivated()) {
+                        actionRels[helper.constants.screens.ACT_DEACTIVATE_DEVICE] = true;
+                    }
+                    if (activationInfo === null || !activationInfo.isActivated() || activationInfo.isReactivationNeeded()) {
+                        actionRels[helper.constants.screens.ACT_ACTIVATE_DEVICE] = true;
+                    }
+                }
+
+                if (activationInfo !== null && activationInfo.isActivated() && !activationInfo.isReactivationNeeded()) {
+                    var preferencesResource = resource.getChild(helper.constants.device.DEVICE_PROFILE_NAME + '/' + helper.constants.device.DEVICE_PREFERENCES);
+
+                    if (preferencesResource && hasPermission(acm, preferencesResource, javax.jcr.security.Privilege.JCR_MODIFY_PROPERTIES)) {
+                        actionRels[helper.constants.screens.ACT_EDIT_SERVER] = true;
+                    }
+                }
+
                 actionRels[helper.constants.screens.ACT_VIEW_DASHBOARD_DEVICE] = true;
                 if (hasPermission(acm, resource, javax.jcr.security.Privilege.JCR_REMOVE_NODE)) {
                     actionRels['screens-dcc-actions-Device-delete-activator'] = true;
