@@ -12,7 +12,7 @@ Use Case
 How to Use the Sample Content
 -----------------------------
 
-- Enable Data Trigger feature using the [Screens Data triggered Content (ContextHub) Feature Flag](http://localhost:4502/system/console/configMgr)
+- Enable Data Trigger feature using the [Screens Data triggered Content (ContextHub) Feature Flag](http://localhost:4502/system/console/configMgr/com.adobe.cq.screens.segmentation.impl.SegmentationFeatureFlag)
 - Preview the [Data Triggers Web Service Display](http://localhost:4502/screens.html/content/screens/screens-howto/locations/data-triggers--web-service/main-office) in the Browser-Player.
 - Create a new [Google Sheet](https://docs.google.com/spreadsheets/)
    The B1 and B2 values are used for this demo. Make sure the Worksheet is called "Sheet1". This can vary depending on the language settings in Google Sheet.  
