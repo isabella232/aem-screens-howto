@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/conf/screens-howto/settings/cloudsettings/configuration/contexthub"
+        cq:lastModified="{Date}2019-08-12T16:36:43.730-07:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="HowTo: Age Teen"
+        sling:resourceType="cq/contexthub/components/segment-page"
+        segmentBoost="{Long}0"
+        segmentName="howto-age-teen-1635775436">
+        <traits
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/contexthub/components/traits/logic/operator-and">
+            <andpar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <property_value
+                    jcr:created="{Date}2019-08-12T16:35:47.675-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-08-12T16:36:43.726-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/contexthub/components/traits/generic-comparison/variants/property-value"
+                    dataType="(auto detect)"
+                    operator="greater-than">
+                    <left
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/contexthub/components/traits/generic-comparison/type/property"
+                        property="audiencefeatures/face-api/age"/>
+                    <right
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/contexthub/components/traits/generic-comparison/type/value"
+                        value="12"/>
+                </property_value>
+                <property_value_248380639
+                    jcr:created="{Date}2019-08-12T16:35:49.218-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2019-08-12T16:36:39.869-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/contexthub/components/traits/generic-comparison/variants/property-value"
+                    operator="less-than">
+                    <left
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/contexthub/components/traits/generic-comparison/type/property"
+                        property="audiencefeatures/face-api/age"/>
+                    <right
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/contexthub/components/traits/generic-comparison/type/value"
+                        value="18"/>
+                </property_value_248380639>
+            </andpar>
+        </traits>
+    </jcr:content>
+</jcr:root>

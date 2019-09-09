@@ -1,0 +1,4 @@
+#base=.
+
+store.audiencefeatures.js
+face-api-detector.js

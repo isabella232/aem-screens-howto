@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/screens-howto"/>
+    <filter root="/apps/screens-howto/clientlibs/contexthub/comparison-operators"/>
+    <filter root="/apps/screens-howto/clientlibs/vendor/tensorflow"/>
+    <filter root="/apps/screens-howto/components/screens/content/text"/>
+    <filter root="/libs/screens/clientlibs/sequencechannel-embed"/>
 </workspaceFilter>

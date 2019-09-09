@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Smart Sequence Channel"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.common.wcm,cq.siteadmin.admin.properties]"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured">
+                <items jcr:primaryType="nt:unstructured">
+                    <ml
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="ML Config"
+                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <mlModelPath
+                                        cq:showOnCreate="{Boolean}true"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                        fieldDescription="path from where the ML-model are loaded"
+                                        fieldLabel="Path to model files"
+                                        name="./mlModelPath"
+                                        rootPath="/"/>
+                                </items>
+                            </column>
+                        </items>
+                    </ml>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

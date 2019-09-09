@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/screens-howto/clientlibs/vendor/face-api"/>
+    <filter root="/apps/screens-howto/components/sequencechannel-ml"/>
+    <filter root="/apps/screens-howto/templates/sequencechannel-ml"/>
+    
+    <filter root="/apps/screens-howto/clientlibs/contexthub/stores/audiencefeatures"/>
+    <filter root="/conf/screens-howto/settings/cloudsettings/configuration/contexthub/audiencefeatures"/>
+    <filter root="/conf/screens-howto/settings/cloudsettings/configuration/contexthub/ui/audiencefeatures"/>
+    
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-gender-male"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-gender-female"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-age-kid"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-age-teen"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-age-adult"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-age-senior"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-mood-happy"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-mood-sad"/>
+    <filter root="/conf/screens-howto/settings/wcm/segments/screens-howto-mood-angry"/>
+    <filter root="/content/campaigns/screens-howto/face-detection"/>
+    
+    <filter root="/content/screens/screens-howto/channels/data-triggers-mlfacedetection"/>
+</workspaceFilter>

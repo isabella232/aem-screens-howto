@@ -65,6 +65,7 @@
         <module>usecases/languagecopies</module>
         <module>usecases/launches</module>
         <module>usecases/livecopies</module>
+        <module>usecases/ml-facedetection</module>
         <module>usecases/multizoneeditor</module>
         <module>usecases/specialevents</module>
         <module>usecases/statichtmlcontent</module>
