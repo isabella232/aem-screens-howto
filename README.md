@@ -35,8 +35,7 @@ Name|Description
 [languagecopies](usecases/languagecopies/)|Automatic channel content translation leveraging _AEM Sites Translation Cloud Services_
 [launches](usecases/launches/)|Scheduled content rollout leveraging _AEM Sites Launches_
 [livecopies](usecases/livecopies/)|Branch-specific content variations leveraging _AEM Sites Live Copies_
-[ml-facedetection](usescases/ml-facedetection/)|A *smart* sequence channel that uses ML-trained models to target content based on facial features (age, gender, mood)  
-(original contribution by @LU15W1R7H)
+[ml-facedetection](usescases/ml-facedetection/)|A *smart* sequence channel that uses ML-trained models to target content based on facial features such as age, gender and mood *(original contribution by @LU15W1R7H)*
 [multizoneeditor](usecases/multizoneeditor/)|Multi-zone channel editor that allows custom layouts by leveraging _AEM Responsive Layout_
 [specialevents](usecases/specialevents/)|Branch-specific scheduled content overrides for special events using day-parting and channel priorities
 [statichtmlcontent](usecases/statichtmlcontent/)|Importing external HTML/JS/CSS experiences directly in your channel (for instance _Animate CC_ experiences)
