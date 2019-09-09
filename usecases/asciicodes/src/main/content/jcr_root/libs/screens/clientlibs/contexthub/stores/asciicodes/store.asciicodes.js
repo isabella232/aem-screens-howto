@@ -38,7 +38,7 @@
     function AsciiCodeStore(name, config) {
         this.config = {};
         if (config) {
-            Object.keys(config).forEach(function (k) {
+            Object.keys(config).forEach(function(k) {
                 this.config[k] = config[k];
             }.bind(this));
         }
